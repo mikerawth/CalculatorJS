@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#calculator {
+    background-color:lightgray;
+    padding:20px;
+    width: 600px;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+#display-container {
+    display:flex;
+}
+
+#display {
+    background-color:white;
+    height:50px;
+    width: 90%;
+    margin: auto;
+    text-align: right;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    background-color:white;
+    margin:20px 0;
+    padding: 30px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 2px black);
+    border-radius: 5px;
+}
+
+
+.blank {
+    height: 40px;
+    width: 63px;
+}

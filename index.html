@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Math.js library to power calculations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.0/math.js"></script>
+    <script src="main.js"></script>
+    <title>CalculatorJS</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="display-container">
+            <input id="display" type="text" disabled></input>
+        </div>
+        <div id="row-0" class="row">
+            <button onclick="buttonPress('7')" id="7" class="button">7</button>
+            <button onclick="buttonPress('8')" id="8" class="button">8</button>
+            <button onclick="buttonPress('9')" id="9" class="button">9</button>
+            <button onclick="buttonPress('/')" id="divide" class="button">/</button>
+        </div>
+        <div id="row-1" class="row">
+            <button onclick="buttonPress('4')" id="4" class="button">4</button>
+            <button onclick="buttonPress('5')" id="5" class="button">5</button>
+            <button onclick="buttonPress('6')" id="6" class="button">6</button>
+            <button onclick="buttonPress('-')" id="subtract" class="button">-</button>
+        </div>
+        <div id="row-2" class="row">
+            <button onclick="buttonPress('1')" id="1" class="button">1</button>
+            <button onclick="buttonPress('2')" id="2" class="button">2</button>
+            <button onclick="buttonPress('3')" id="3" class="button">3</button>
+            <button onclick="buttonPress('*')" id="multiply" class="button">*</button>
+        </div>
+        <div id="row-3" class="row">
+            <button onclick="buttonPress('0')" id="0" class="button">0</button>
+            <button onclick="buttonPress('.')" id="." class="button">.</button>
+            <button onclick="calculate()" id="=" class="button">=</button>
+            <button onclick="buttonPress('+')" id="add" class="button">+</button>
+        </div>
+        <div id="row-4" class="row">
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <div class="blank"></div>
+            <button onclick="clearDisplay()" id="c" class="button">C</button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
